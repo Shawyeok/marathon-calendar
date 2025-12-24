@@ -45,7 +45,7 @@ jobs:
           ls -lh output/
       
       - name: Upload to Cloudflare R2
-        if: ${{ secrets.R2_ACCOUNT_ID != '' && secrets.R2_BUCKET_NAME != '' }}
+        if: secrets.R2_ACCOUNT_ID && secrets.R2_BUCKET_NAME
         continue-on-error: true
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
