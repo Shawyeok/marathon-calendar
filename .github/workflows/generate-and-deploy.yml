@@ -45,7 +45,6 @@ jobs:
           ls -lh output/
       
       - name: Upload to Cloudflare R2
-        if: secrets.R2_ACCOUNT_ID && secrets.R2_BUCKET_NAME
         continue-on-error: true
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
@@ -60,7 +59,7 @@ jobs:
             echo "⚠️  R2 secrets not configured. Skipping R2 upload."
             echo "📝 To enable R2 upload, configure R2 secrets in repository settings."
             echo "📖 See .github/R2_SETUP.md for instructions."
-            exit 0
+            exit 1
           fi
           
           # Install AWS CLI
