@@ -248,3 +248,88 @@
     - road-race
   
   status: confirmed
+- id: chengdu-world-heritage-marathon-2026
+  name: 2026成都世遗马拉松 (2026 Chengdu World Heritage Marathon)
+  date: 2026-03-22
+  time: "07:30:00"
+  timezone: Asia/Shanghai
+  
+  location:
+    city: 都江堰 (Dujiangyan)
+    state: 四川省 (Sichuan)
+    country: China
+    venue: 都江堰市凤凰体育场 (Dujiangyan Phoenix Stadium)
+  
+  registration:
+    open_date: 2025-12-26
+    open_time: "10:00:00"
+    close_date: 2026-01-19
+    close_time: "18:00:00"
+    url: https://mp.weixin.qq.com/s/9IsgQr1dsnIXoRiaITlWwg
+    lottery_date: 2026-01-26
+    requirements:
+      - "报名人数超出限制将抽签决定参赛人员 (Lottery selection if registration exceeds capacity)"
+  
+  categories:
+    - name: 全程马拉松 (Full Marathon)
+      distance: 42.195
+      distance_unit: km
+      capacity: 15000
+    - name: 半程马拉松 (Half Marathon)
+      distance: 21.0975
+      distance_unit: km
+      capacity: 20000
+  
+  details:
+    type: Road
+    surface: Paved
+    website: https://mp.weixin.qq.com/s/9IsgQr1dsnIXoRiaITlWwg
+    description: |
+      2026成都世遗马拉松
+      
+      The 2026 Chengdu World Heritage Marathon
+      
+      赛事特点:
+      • 比赛日期: 2026年3月22日（周日）
+      • 比赛起点: 成都市都江堰
+      • 总参赛规模: 3.5万人
+      • 田协A类认证马拉松
+      
+      Race Highlights:
+      • Race Date: March 22, 2026 (Sunday)
+      • Start Location: Dujiangyan, Chengdu
+      • Total Participants: 35,000
+      • CAA A-Class Certified Marathon
+      
+      赛事历史:
+      • 首次举办于2015年，至今已成功举办10年
+      • 参赛规模从2015年的4776人增加到2024年的35000人
+      • 2025年"成都双遗马拉松"正式变更为"成都世遗马拉松"
+      
+      Event History:
+      • First held in 2015, successfully held for 10 years
+      • Participant scale increased from 4,776 in 2015 to 35,000 in 2024
+      • Renamed from "Chengdu Shuangyi Marathon" to "Chengdu World Heritage Marathon" in 2025
+      
+      参考比赛线路 (Reference Course Route):
+      • 马拉松: 都江堰市凤凰体育场（起点）→彩虹大道南段→都江堰大道→天乙街→公园路→复兴街→鱼嘴→磨儿滩→G213线应急通道→赵公路→鑫玉大道→青城山大道→青城山新山门（折返）→S401线→外江大桥→天府大道→都江堰市凤凰体育场（终点）
+      • 半程马拉松: 都江堰市凤凰体育场（起点）→彩虹大道南段→都江堰大道→天乙街→公园路→复兴街→鱼嘴→磨儿滩→G213应急通道→赵公路→鑫玉大道→玉府路→外江大桥→都江堰市凤凰体育场（终点）
+      
+      Course Route (Reference):
+      • Full Marathon: Dujiangyan Phoenix Stadium → Caihong Avenue → Dujiangyan Avenue → Tianyi Street → Park Road → Fuxing Street → Yuzui → Mo'ertan → G213 Emergency Channel → Zhaogong Road → Xinyu Avenue → Qingchengshan Avenue → Qingchengshan New Gate (turnaround) → S401 → Waijiang Bridge → Tianfu Avenue → Dujiangyan Phoenix Stadium
+      • Half Marathon: Dujiangyan Phoenix Stadium → Caihong Avenue → Dujiangyan Avenue → Tianyi Street → Park Road → Fuxing Street → Yuzui → Mo'ertan → G213 Emergency Channel → Zhaogong Road → Xinyu Avenue → Yufu Road → Waijiang Bridge → Dujiangyan Phoenix Stadium
+    
+    contact:
+      wechat: 我要报名-马拉松报名
+  
+  tags:
+    - china
+    - sichuan
+    - chengdu
+    - dujiangyan
+    - lottery
+    - road-race
+    - world-heritage
+    - scenic
+  
+  status: confirmed
