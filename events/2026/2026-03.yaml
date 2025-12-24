@@ -1,0 +1,250 @@
+- id: wuxi-marathon-2026
+  name: 海澜之家无锡马拉松 (HLA Wuxi Marathon)
+  date: 2026-03-22
+  time: "07:00:00"
+  timezone: Asia/Shanghai
+  
+  location:
+    city: 无锡 (Wuxi)
+    state: 江苏省 (Jiangsu)
+    country: China
+    venue: 无锡市 (Wuxi City)
+  
+  registration:
+    open_date: 2025-12-19
+    open_time: "10:00:00"
+    close_date: 2025-12-25
+    close_time: "17:00:00"
+    url: https://wuxi.marathon.org.cn
+    lottery_date: 2026-01-05
+    payment_deadline: 2026-01-10
+    payment_deadline_time: "17:00:00"
+    requirements:
+      - "马拉松项目: 20周岁及以上 (2006年12月31日前出生)"
+      - "半程马拉松项目: 18周岁及以上 (2008年12月31日前出生)"
+      - "采用抽签加候补办法决定参赛资格"
+      - "马拉松项目设A、B、C、D四个抽签段，根据A1类赛事成绩分段"
+      - "赛前12个月内需在二甲以上医院体检"
+      - "高龄选手(70周岁及以上)需直系亲属签署同意书并配备伴跑者"
+    cost:
+      full: "￥200"
+      half: "￥200"
+    packet_pickup:
+      start: 2026-03-19
+      end: 2026-03-21
+      location: "无锡太湖国际博览中心"
+      note: "比赛当日早晨不设置现场报到，须本人持有效证件原件领取，采用人脸识别技术核验"
+  
+  categories:
+    - name: 全程马拉松 (Full Marathon)
+      distance: 42.195
+      distance_unit: km
+      capacity: 27000
+    - name: 半程马拉松 (Half Marathon)
+      distance: 21.0975
+      distance_unit: km
+      capacity: 8000
+  
+  details:
+    type: Road
+    surface: Paved
+    website: https://wuxi.marathon.org.cn
+    description: |
+      2026海澜之家无锡马拉松
+      
+      The 2026 HLA Wuxi Marathon
+      
+      赛事特点:
+      • 主办单位: 无锡市人民政府
+      • 承办单位: 无锡市体育局、无锡汇跑体育有限公司
+      • 技术认证: 中国田径协会（拟）
+      • 赞助商: 海澜之家
+      
+      抽签规则:
+      • 马拉松项目设置A、B、C、D四个抽签段
+      • A段占20%，B段占30%，C段占45%，D段占5%
+      • 根据2023.12.17-2025.12.16期间A1类赛事成绩分段
+      • 半程马拉松项目统一抽签，不分段
+      
+      报到要求:
+      • 须本人持有效证件原件领取参赛物品
+      • 采用人脸识别技术进行身份核验
+      • 不接受代领
+      • 报到时间: 3月19-21日
+      • 报到地点: 无锡太湖国际博览中心
+      
+      特殊规定:
+      • 不设竞速轮椅组别
+      • 视力障碍选手需伴跑者全程伴跑
+      • 高龄选手(70岁以上)需配伴跑者
+    
+    contact:
+      phone: "400-99-42195转1"
+      email: kefu@ihuipao.com
+      service_hours: "周一至周五 9:00-12:00, 13:00-17:00"
+      platforms:
+        - "无锡马拉松官方网站"
+        - "汇跑赛事微信公众号"
+        - "参赛助手微信小程序"
+        - "数字心动APP"
+  
+  tags:
+    - china
+    - jiangsu
+    - wuxi
+    - lottery
+    - road-race
+    - qualification-available
+    - face-recognition
+    - sponsored
+  
+  status: confirmed
+- id: hefei-half-marathon-2026
+  name: 合肥半程马拉松 (Hefei Half Marathon)
+  date: 2026-03-22
+  time: "07:30:00"
+  timezone: Asia/Shanghai
+  
+  location:
+    city: 合肥 (Hefei)
+    state: 安徽省 (Anhui)
+    country: China
+    venue: 骆岗公园青海路2号口 (Luogang Park Qinghai Road Gate 2)
+  
+  registration:
+    open_date: 2025-12-12
+    open_time: "10:00:00"
+    close_date: 2025-12-30
+    close_time: "22:00:00"
+    url: https://mp.weixin.qq.com/s/wiGy12D5HXfrGFPJ8DWi8Q
+    lottery_date: 2026-01-09
+    requirements:
+      - "采用抽签方式确定参赛资格 (Lottery selection)"
+      - "年龄限制: 16周岁及以上 (Age: 16+ years old, born before Mar 22, 2010)"
+      - "中签后须上传体检报告 (Medical report required after lottery)"
+      - "体检报告上传期: 1月10日-3月10日 (Medical report upload: Jan 10 - Mar 10)"
+      - "须本人凭身份证领取参赛包 (Must collect packet with ID in person)"
+    cost:
+      half: "¥150"
+    packet_pickup:
+      start: 2026-03-15  # 赛前一周公布，估算日期
+      end: 2026-03-21
+      note: "须本人凭有效身份证件到场领取（不得代领），具体时间赛前一周公布"
+  
+  categories:
+    - name: 半程马拉松 (Half Marathon)
+      distance: 21.0975
+      distance_unit: km
+      capacity: 12000
+  
+  details:
+    type: Road
+    surface: Paved
+    website: https://mp.weixin.qq.com/s/wiGy12D5HXfrGFPJ8DWi8Q
+    description: |
+      2026合肥半程马拉松
+      起终点: 骆岗公园青海路2号口（合肥园博园30号门-次门）
+      
+      路线特点:
+      • 骆岗公园内闭环赛道
+      • 经过机场跑道、安徽园、航站楼南广场
+      • 途经蔷薇花海、全向信标台等景点
+      
+      The 2026 Hefei Half Marathon
+      Start/Finish: Luogang Park Qinghai Road Gate 2
+      
+      Course Highlights:
+      • Loop course within Luogang Park
+      • Passing airport runway, Anhui Garden, terminal plaza
+      • Scenic spots including rose garden and beacon tower
+      
+      特别说明:
+      • 关门时间: 3小时
+      • 前50名（净计时）可直通2026合肥马拉松
+      • 完赛领取完赛奖牌和完赛物品
+      • 前60名选手可获得奖金
+    
+    contact:
+      wechat: 合肥马拉松
+      phone: "0551-62886261, 18156027468"
+  
+  tags:
+    - china
+    - anhui
+    - hefei
+    - lottery
+    - half-marathon
+    - road-race
+    - park-course
+  
+  status: confirmed
+- id: wuhu-marathon-2026
+  name: 芜湖马拉松 (Wuhu Marathon)
+  date: 2026-03-29
+  time: "07:30:00"
+  timezone: Asia/Shanghai
+  
+  location:
+    city: 芜湖 (Wuhu)
+    state: 安徽省 (Anhui)
+    country: China
+    venue: 芜湖航空新城运动中心 (Wuhu Aviation New City Sports Center)
+  
+  registration:
+    open_date: 2025-12-22
+    open_time: "10:00:00"
+    close_date: 2026-01-25
+    close_time: "16:00:00"
+    url: https://mp.weixin.qq.com/s/AcbXR1-Lcy08UB4yBEcr6A
+    lottery_date: 2026-02-05
+    requirements:
+      - "采用抽签方式确定参赛资格 (Lottery selection)"
+      - "全程马拉松: 20周岁及以上 (Full: Age 20+)"
+      - "半程马拉松: 16周岁及以上 (Half: Age 16+)"
+    cost:
+      full: "¥160"
+      half: "¥120"
+    packet_pickup:
+      start: 2026-03-26
+      end: 2026-03-28
+  
+  categories:
+    - name: 全程马拉松 (Full Marathon)
+      distance: 42.195
+      distance_unit: km
+      capacity: 6000
+    - name: 半程马拉松 (Half Marathon)
+      distance: 21.0975
+      distance_unit: km
+      capacity: 10000
+  
+  details:
+    type: Road
+    surface: Paved
+    website: https://mp.weixin.qq.com/s/AcbXR1-Lcy08UB4yBEcr6A
+    description: |
+      2026芜湖马拉松
+      起终点: 芜湖航空新城运动中心
+      
+      竞赛项目:
+      • 全程马拉松 (42.195公里) - 6000人
+      • 半程马拉松 (21.0975公里) - 10000人
+      
+      The 2026 Wuhu Marathon
+      Start/Finish: Wuhu Aviation New City Sports Center
+      
+      Race Categories:
+      • Full Marathon (42.195km) - 6,000 participants
+      • Half Marathon (21.0975km) - 10,000 participants
+    
+    contact:
+      wechat: 航空芜马
+      email: wuhumarathon@163.com
+  
+  tags:
+    - china
+    - anhui
+    - lottery
+    - road-race
+  
+  status: confirmed

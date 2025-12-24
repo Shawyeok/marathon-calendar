@@ -1,0 +1,113 @@
+name: Generate and Deploy Calendar
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'events/**'
+      - 'scripts/**'
+      - '.github/workflows/generate-and-deploy.yml'
+  workflow_dispatch:  # Allow manual trigger
+
+env:
+  PYTHON_VERSION: '3.10'
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Generate calendar files
+        run: |
+          echo "📅 Generating marathon calendars..."
+          
+          # Generate main calendar (all events)
+          python scripts/generate_calendar.py
+          
+          echo "✅ Calendar generation completed"
+          
+          # Show generated files
+          ls -lh output/
+      
+      - name: Upload to Cloudflare R2
+        if: ${{ secrets.R2_ACCOUNT_ID != '' && secrets.R2_BUCKET_NAME != '' }}
+        continue-on-error: true
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+        run: |
+          echo "☁️  Uploading to Cloudflare R2..."
+          
+          # Check if R2 credentials are configured
+          if [ -z "$R2_ACCOUNT_ID" ] || [ -z "$R2_BUCKET_NAME" ]; then
+            echo "⚠️  R2 secrets not configured. Skipping R2 upload."
+            echo "📝 To enable R2 upload, configure R2 secrets in repository settings."
+            echo "📖 See .github/R2_SETUP.md for instructions."
+            exit 0
+          fi
+          
+          # Install AWS CLI
+          pip install awscli
+          
+          # Configure R2 endpoint
+          R2_ENDPOINT="https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          
+          echo "🔗 Endpoint: ${R2_ENDPOINT}"
+          echo "🪣 Bucket: ${R2_BUCKET_NAME}"
+          echo ""
+          
+          # Upload all ICS files from output/ directory
+          UPLOAD_SUCCESS=0
+          UPLOAD_FAILED=0
+          
+          for file in output/*.ics; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file")
+              filesize=$(du -h "$file" | cut -f1)
+              echo "📤 Uploading: $filename ($filesize)"
+              
+              if aws s3 cp "$file" "s3://${R2_BUCKET_NAME}/$filename" \
+                --endpoint-url "$R2_ENDPOINT" \
+                --content-type "text/calendar; charset=utf-8" \
+                --cache-control "max-age=3600, public" \
+                --metadata "generated=$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+                --metadata "version=${GITHUB_SHA:0:7}" \
+                2>&1; then
+                
+                echo "✅ Uploaded: $filename"
+                ((UPLOAD_SUCCESS++))
+              else
+                echo "❌ Failed: $filename"
+                ((UPLOAD_FAILED++))
+              fi
+              echo ""
+            fi
+          done
+          
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          if [ $UPLOAD_FAILED -eq 0 ]; then
+            echo "🎉 All files uploaded successfully! ($UPLOAD_SUCCESS files)"
+          else
+            echo "⚠️  Upload completed with errors"
+            echo "   Successful: $UPLOAD_SUCCESS"
+            echo "   Failed: $UPLOAD_FAILED"
+            exit 1
+          fi
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

@@ -1,0 +1,78 @@
+# Marathon Event Template
+# Copy this template and fill in the details for your marathon
+# File path: events/<year>/<year>-<month>.yaml
+# Example: events/2026/2026-04.yaml for April 2026 marathons
+
+- id: marathon-name-year  # Unique ID, e.g., beijing-marathon-2026
+  name: Marathon Name (English) / 马拉松名称（中文）
+  date: YYYY-MM-DD  # Race date
+  time: "HH:MM:SS"  # Start time, e.g., "07:30:00"
+  timezone: Asia/Shanghai  # Timezone, see: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  
+  location:
+    city: City Name (城市名)
+    state: Province/State (省份) # Optional
+    country: Country (国家)
+    venue: Start/Finish Location (起终点位置)
+  
+  registration:
+    open_date: YYYY-MM-DD  # Registration opens
+    open_time: "HH:MM:SS"
+    close_date: YYYY-MM-DD  # Registration closes
+    close_time: "HH:MM:SS"
+    url: https://example.com/register  # Registration URL
+    lottery_date: YYYY-MM-DD  # Optional: lottery announcement date
+    requirements:  # Optional: list of requirements
+      - "Requirement 1"
+      - "Requirement 2"
+    cost:  # Optional: registration fees
+      full: "¥XXX or $XXX"
+      half: "¥XXX or $XXX"
+    packet_pickup:  # Optional: when to collect race packet
+      start: YYYY-MM-DD
+      end: YYYY-MM-DD
+      note: "Additional notes"  # Optional
+  
+  categories:
+    - name: 全程马拉松 (Full Marathon)
+      distance: 42.195
+      distance_unit: km
+      capacity: 6000
+    - name: 半程马拉松 (Half Marathon)
+      distance: 21.0975
+      distance_unit: km
+      capacity: 10000
+  
+  details:
+    type: Road  # Road, Trail, Virtual, etc.
+    surface: Paved  # Paved, Trail, Mixed, etc.
+    website: https://example.com  # Official website
+    description: |
+      Event description in multiple lines
+      Can include race highlights, course info, etc.
+      
+      赛事描述可以多行
+      包括赛道特点、赛事亮点等
+    
+    contact:
+      wechat: WeChat公众号  # Optional: WeChat official account
+      email: contact@example.com  # Optional: contact email
+      phone: "+86 XXX XXXX XXXX"  # Optional: contact phone
+  
+  tags:  # Optional: tags for categorization
+    - china  # or other country
+    - province-name
+    - lottery  # if lottery is required
+    - road-race
+    - flat-course  # or hilly-course
+    - scenic
+  
+  status: confirmed  # confirmed, tentative, cancelled
+
+# You can add multiple events in the same file
+# Just start a new event with another "- id: ..."
+
+- id: another-marathon-year
+  name: Another Marathon Name
+  # ... fill in the details
+

@@ -1,0 +1,86 @@
+- id: qingdao-marathon-2026
+  name: 青岛马拉松 (Qingdao Marathon)
+  date: 2026-04-19
+  time: "07:30:00"
+  timezone: Asia/Shanghai
+  
+  location:
+    city: 青岛 (Qingdao)
+    state: 山东省 (Shandong)
+    country: China
+    venue: 青岛市人民政府 (Qingdao Municipal Government)
+  
+  registration:
+    open_date: 2025-12-24
+    open_time: "15:00:00"
+    close_date: 2026-01-06
+    close_time: "17:00:00"
+    url: https://mp.weixin.qq.com/s/dTdNzqjbyAgeGZ67UKgANw
+    lottery_date: 2026-01-14
+    lottery_time: "15:00:00"
+    requirements:
+      - "报名人数超出限制将抽签决定参赛人员"
+      - "成绩直通: 马拉松1300人，半马1200人"
+      - "永久参赛号码拥有者免抽签直通"
+      - "需在中国田协A类认证赛事中达到成绩标准"
+    cost:
+      full: "¥200"
+      half: "¥160"
+  
+  categories:
+    - name: 全程马拉松 (Full Marathon)
+      distance: 42.195
+      distance_unit: km
+      capacity: 13000
+    - name: 半程马拉松 (Half Marathon)
+      distance: 21.0975
+      distance_unit: km
+      capacity: 12000
+  
+  details:
+    type: Road
+    surface: Paved
+    website: https://mp.weixin.qq.com/s/dTdNzqjbyAgeGZ67UKgANw
+    description: |
+      2026青岛马拉松
+      起点: 青岛市人民政府
+      
+      赛事特色:
+      • 从五四广场出发
+      • 途径中山公园、汇泉广场、青岛奥林匹克帆船中心
+      • 经过青岛国际会议中心等众多地标
+      • 独特的"跑马、看海、品青岛啤酒"体验
+      • 田径协会A类认证马拉松
+      
+      The 2026 Qingdao Marathon
+      Starting Point: Qingdao Municipal Government
+      
+      Race Highlights:
+      • Starting from May Fourth Square
+      • Passing landmarks including Zhongshan Park, Huiquan Square
+      • Qingdao Olympic Sailing Center, International Conference Center
+      • Unique experience: Run, Sea Views, Tsingtao Beer
+      • CAA Class A Certified Marathon
+      
+      直通规则 (Qualification):
+      • 成绩直通: 2024.1.1-2025.12.24期间中国田协A类赛事达标成绩
+      • 永久号直通: 永久参赛号码拥有者免抽签
+      
+      赛事历史:
+      创办于2017年，已成功举办7届
+    
+    contact:
+      wechat: 青岛马拉松
+  
+  tags:
+    - china
+    - shandong
+    - qingdao
+    - lottery
+    - road-race
+    - coastal
+    - scenic
+    - qualification-available
+    - caa-class-a
+  
+  status: confirmed
