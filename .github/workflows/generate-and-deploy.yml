@@ -91,10 +91,10 @@ jobs:
                 2>&1; then
                 
                 echo "✅ Uploaded: $filename"
-                ((UPLOAD_SUCCESS++))
+                ((++UPLOAD_SUCCESS))
               else
                 echo "❌ Failed: $filename"
-                ((UPLOAD_FAILED++))
+                ((++UPLOAD_FAILED))
               fi
               echo ""
             fi
