@@ -333,3 +333,79 @@
     - scenic
   
   status: confirmed
+- id: shijiazhuang-marathon-2026
+  name: 2026河北石家庄马拉松 (2026 Hebei Shijiazhuang Marathon)
+  date: 2026-03-29
+  time: "07:30:00"
+  timezone: Asia/Shanghai
+  
+  location:
+    city: 石家庄
+    state: 河北省
+    country: China
+    venue: 站前街解放广场
+  
+  registration:
+    open_date: 2026-01-07
+    open_time: "10:00:00"
+    close_date: 2026-01-18
+    close_time: "17:00:00"
+    url: http://www.sjz-marathon.com/
+    lottery_date: 2026-01-19  # 报名结束后抽签，估算日期
+    requirements:
+      - "报名人数超出限制将抽签决定参赛人员 (Lottery selection if registration exceeds capacity)"
+      - "持有河北石家庄马拉松永久参赛号的参赛选手，报名缴费成功后免抽签直通 (Permanent bib holders exempt from lottery)"
+    cost:
+      full: "¥150"
+      half: "¥120"
+  
+  categories:
+    - name: 全程马拉松 (Full Marathon)
+      distance: 42.195
+      distance_unit: km
+      capacity: 17000
+    - name: 半程马拉松 (Half Marathon)
+      distance: 21.0975
+      distance_unit: km
+      capacity: 18000
+  
+  details:
+    type: Road
+    surface: Paved
+    website: http://www.sjz-marathon.com/
+    description: |
+      2026河北石家庄马拉松
+      
+      The 2026 Hebei Shijiazhuang Marathon
+      
+      赛事特点:
+      • 比赛日期: 2026年3月29日（周日）
+      • 比赛起点: 河北省石家庄市站前街解放广场
+      • 总参赛规模: 3.5万人
+      • 河北省会马拉松
+      • 北方地区大型马拉松赛事
+      • 马拉松、半程马拉松项目完赛前100名均设奖金
+      • 诚意满满的完赛大礼包
+      • 正宗牛肉板面免费吃
+      
+      赛事历史:
+      • 创办于2009年
+      • 赛事比赛线路穿越石家庄六大城区
+      • 景点免费游
+      • 完赛前100有奖金
+
+    contact:
+      wechat: 马拉松报名平台
+  
+  tags:
+    - china
+    - hebei
+    - shijiazhuang
+    - lottery
+    - road-race
+    - provincial-capital
+    - northern-china
+    - prize-money
+    - scenic
+  
+  status: confirmed
